@@ -7,9 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+@class JBShellContainerView;
 @interface JBAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
-
+@property (nonatomic, strong) JBShellContainerView *shellContainer;
 @end

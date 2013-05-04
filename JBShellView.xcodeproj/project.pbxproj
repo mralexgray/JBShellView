@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B7E470617349D84005C8997 /* AtoZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7E470517349D84005C8997 /* AtoZ.framework */; };
 		CD54ED8E166803AC002D997D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD54ED8D166803AC002D997D /* Cocoa.framework */; };
 		CD54ED98166803AC002D997D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD54ED96166803AC002D997D /* InfoPlist.strings */; };
 		CD54ED9A166803AC002D997D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54ED99166803AC002D997D /* main.m */; };
@@ -27,20 +28,6 @@
 			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
 			remoteInfo = ParseKit;
 		};
-		CD54EDC41668053A002D997D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD54EDB216680539002D997D /* ParseKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D389F1CE0F1965E600558235;
-			remoteInfo = JSParseKit;
-		};
-		CD54EDC61668053A002D997D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD54EDB216680539002D997D /* ParseKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D3FDC5830FFC4BFC00F1F797;
-			remoteInfo = ParseKitMobile;
-		};
 		CD54EDC81668053A002D997D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CD54EDB216680539002D997D /* ParseKit.xcodeproj */;
@@ -48,30 +35,10 @@
 			remoteGlobalIDString = D37D8DC61571A4F700CDB822;
 			remoteInfo = Tests;
 		};
-		CD54EDCA1668053A002D997D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD54EDB216680539002D997D /* ParseKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D33494100E2963FD00406085;
-			remoteInfo = DemoApp;
-		};
-		CD54EDCC1668053A002D997D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD54EDB216680539002D997D /* ParseKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D34185040E520D3F0081B0DC;
-			remoteInfo = DebugApp;
-		};
-		CD54EDCE1668053A002D997D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD54EDB216680539002D997D /* ParseKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D389F2030F196A7500558235;
-			remoteInfo = JSDemoApp;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B7E470517349D84005C8997 /* AtoZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtoZ.framework; path = ../../../../../Library/Frameworks/AtoZ.framework; sourceTree = "<group>"; };
 		CD54ED89166803AC002D997D /* JBShellView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JBShellView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD54ED8D166803AC002D997D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CD54ED90166803AC002D997D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -102,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7E470617349D84005C8997 /* AtoZ.framework in Frameworks */,
 				CD54ED8E166803AC002D997D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +80,7 @@
 		CD54ED7E166803AC002D997D = {
 			isa = PBXGroup;
 			children = (
+				7B7E470517349D84005C8997 /* AtoZ.framework */,
 				CD54ED93166803AC002D997D /* JBShellView */,
 				CD54ED8C166803AC002D997D /* Frameworks */,
 				CD54ED8A166803AC002D997D /* Products */,
@@ -199,12 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				CD54EDC31668053A002D997D /* ParseKit.framework */,
-				CD54EDC51668053A002D997D /* JSParseKit.framework */,
-				CD54EDC71668053A002D997D /* libparsekit.a */,
 				CD54EDC91668053A002D997D /* Tests.octest */,
-				CD54EDCB1668053A002D997D /* DemoApp.app */,
-				CD54EDCD1668053A002D997D /* DebugApp.app */,
-				CD54EDCF1668053A002D997D /* JSDemoApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,46 +234,11 @@
 			remoteRef = CD54EDC21668053A002D997D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CD54EDC51668053A002D997D /* JSParseKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = JSParseKit.framework;
-			remoteRef = CD54EDC41668053A002D997D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CD54EDC71668053A002D997D /* libparsekit.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libparsekit.a;
-			remoteRef = CD54EDC61668053A002D997D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		CD54EDC91668053A002D997D /* Tests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = Tests.octest;
 			remoteRef = CD54EDC81668053A002D997D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CD54EDCB1668053A002D997D /* DemoApp.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = DemoApp.app;
-			remoteRef = CD54EDCA1668053A002D997D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CD54EDCD1668053A002D997D /* DebugApp.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = DebugApp.app;
-			remoteRef = CD54EDCC1668053A002D997D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CD54EDCF1668053A002D997D /* JSDemoApp.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = JSDemoApp.app;
-			remoteRef = CD54EDCE1668053A002D997D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -432,6 +361,7 @@
 				GCC_PREFIX_HEADER = "JBShellView/JBShellView-Prefix.pch";
 				INFOPLIST_FILE = "JBShellView/JBShellView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -444,6 +374,7 @@
 				GCC_PREFIX_HEADER = "JBShellView/JBShellView-Prefix.pch";
 				INFOPLIST_FILE = "JBShellView/JBShellView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -467,6 +398,7 @@
 				CD54EDA9166803AC002D997D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
