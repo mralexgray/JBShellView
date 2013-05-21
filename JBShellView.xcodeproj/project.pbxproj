@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B7E470617349D84005C8997 /* AtoZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7E470517349D84005C8997 /* AtoZ.framework */; };
+		7BA4E2841734C3800013E78A /* AtoZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA4E2831734C3800013E78A /* AtoZ.framework */; };
+		7BA4E2851734C39C0013E78A /* JBTextEditorProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54EDB01668052D002D997D /* JBTextEditorProcessor.m */; };
 		CD54ED8E166803AC002D997D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD54ED8D166803AC002D997D /* Cocoa.framework */; };
 		CD54ED98166803AC002D997D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD54ED96166803AC002D997D /* InfoPlist.strings */; };
 		CD54ED9A166803AC002D997D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54ED99166803AC002D997D /* main.m */; };
 		CD54ED9E166803AC002D997D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CD54ED9C166803AC002D997D /* Credits.rtf */; };
 		CD54EDA1166803AC002D997D /* JBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54EDA0166803AC002D997D /* JBAppDelegate.m */; };
 		CD54EDA4166803AC002D997D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD54EDA2166803AC002D997D /* MainMenu.xib */; };
-		CD54EDB11668052D002D997D /* JBTextEditorProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54EDB01668052D002D997D /* JBTextEditorProcessor.m */; };
 		CD54EDD7166805C8002D997D /* JBShellView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54EDD1166805C8002D997D /* JBShellView.m */; };
 		CD54EDD8166805C8002D997D /* JBShellContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54EDD3166805C8002D997D /* JBShellContainerView.m */; };
 		CD54EDD9166805C8002D997D /* JBShellCommandHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54EDD6166805C8002D997D /* JBShellCommandHistory.m */; };
@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7B7E470517349D84005C8997 /* AtoZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtoZ.framework; path = ../../../../../Library/Frameworks/AtoZ.framework; sourceTree = "<group>"; };
+		7BA4E2831734C3800013E78A /* AtoZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtoZ.framework; path = ../../../../../../Library/Frameworks/AtoZ.framework; sourceTree = "<group>"; };
 		CD54ED89166803AC002D997D /* JBShellView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JBShellView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD54ED8D166803AC002D997D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CD54ED90166803AC002D997D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B7E470617349D84005C8997 /* AtoZ.framework in Frameworks */,
+				7BA4E2841734C3800013E78A /* AtoZ.framework in Frameworks */,
 				CD54ED8E166803AC002D997D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,7 +80,7 @@
 		CD54ED7E166803AC002D997D = {
 			isa = PBXGroup;
 			children = (
-				7B7E470517349D84005C8997 /* AtoZ.framework */,
+				7BA4E2831734C3800013E78A /* AtoZ.framework */,
 				CD54ED93166803AC002D997D /* JBShellView */,
 				CD54ED8C166803AC002D997D /* Frameworks */,
 				CD54ED8A166803AC002D997D /* Products */,
@@ -261,9 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BA4E2851734C39C0013E78A /* JBTextEditorProcessor.m in Sources */,
 				CD54ED9A166803AC002D997D /* main.m in Sources */,
 				CD54EDA1166803AC002D997D /* JBAppDelegate.m in Sources */,
-				CD54EDB11668052D002D997D /* JBTextEditorProcessor.m in Sources */,
 				CD54EDD7166805C8002D997D /* JBShellView.m in Sources */,
 				CD54EDD8166805C8002D997D /* JBShellContainerView.m in Sources */,
 				CD54EDD9166805C8002D997D /* JBShellCommandHistory.m in Sources */,
@@ -357,6 +357,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JBShellView/JBShellView-Prefix.pch";
 				INFOPLIST_FILE = "JBShellView/JBShellView-Info.plist";
@@ -370,6 +374,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JBShellView/JBShellView-Prefix.pch";
 				INFOPLIST_FILE = "JBShellView/JBShellView-Info.plist";
